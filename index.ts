@@ -1,13 +1,11 @@
 import { PrismaClient } from "@prisma/client";
-import { Request, Response } from "express";
-import express from "express";
-
+import express from 'express'
 const app =express();
 // const db = new PrismaClient();
 
 
-app.get('/', (req:Request, res:Response) => {
-    res.send('Hello World');
+app.get('/', (req, res) => {
+    res.json('Hello World');
 });
 
 // app.get('/users', async (req:Request, res:Response) => {
